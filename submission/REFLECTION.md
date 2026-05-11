@@ -54,7 +54,8 @@ Drop `submission/screenshots/jaeger-trace.png` showing `embed-text → vector-se
 Paste the log line and the trace_id it links to:
 
 ```
-... paste here ...
+{"model": "llama3-mock", "input_tokens": 6, "output_tokens": 44, "quality": 0.73, "duration_seconds": 0.4163, "trace_id": "a75b5628c814795fd432925e4b586ec4", "event": "prediction served", "level": "info", "timestamp": "2026-05-11T14:35:27.944649Z"}
+TraceID: a75b5628c814795fd432925e4b586ec4
 ```
 
 ### Tail-sampling math
