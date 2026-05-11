@@ -20,7 +20,7 @@ route:
 receivers:
   - name: 'slack-default'
     slack_configs:
-      - api_url: 'https://hooks.slack.com/services/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'
+      - api_url: 'https://hooks.slack.com/services/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'
         channel: '#observability'
         send_resolved: true
         title: '{{ if eq .Status "firing" }}🔥{{ else }}✅{{ end }} {{ .GroupLabels.alertname }}'
@@ -33,7 +33,7 @@ receivers:
 
   - name: 'slack-critical'
     slack_configs:
-      - api_url: 'https://hooks.slack.com/services/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'
+      - api_url: 'https://hooks.slack.com/services/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'
         channel: '#oncall'
         send_resolved: true
         title: '🚨 CRITICAL: {{ .GroupLabels.alertname }}'
